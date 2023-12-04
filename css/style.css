@@ -1,16 +1,4 @@
 /* Variables */
-$font-text: "Inconsolata", monospace;
-$font-header: "Signika", sans-serif;
-
-$color-one: #0097e6;
-$color-two: #33d9b2;
-$color-three: #ff5252;
-
-$color-light: #ffffff;
-$color-main: #2c2c54;
-
-$transition: all 1s;
-
 /* Global */
 *,
 *::before,
@@ -22,8 +10,8 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.7;
-  font-family: $font-text;
-  color: $color-main;
+  font-family: "Inconsolata", monospace;
+  color: #2c2c54;
 }
 
 .container {
@@ -42,7 +30,7 @@ section {
   margin: 24px auto 0 auto;
   padding: 15px;
   border-radius: 5px;
-  font-family: $font-text;
+  font-family: "Inconsolata", monospace;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -51,18 +39,18 @@ section {
   border-style: solid;
   background-position: 100% 0;
   background-size: 300%;
-  transition: $transition;
+  transition: all 1s;
 }
 
 .btn:hover {
   background-position: 0 100%;
-  color: $color-one;
+  color: #0097e6;
 }
 
 .btn-one {
-  border-color: $color-light;
-  color: $color-light;
-  background-image: linear-gradient(90deg, $color-light 50%, transparent 50%);
+  border-color: #ffffff;
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
 }
 
 .row {
@@ -72,10 +60,9 @@ section {
 }
 
 /* Navigation */
-
 nav {
   padding: 12px 0;
-  background: $color-one;
+  background: #0097e6;
 }
 
 nav {
@@ -83,7 +70,7 @@ nav {
 }
 
 nav a:hover {
-  color: $color-two;
+  color: #33d9b2;
 }
 
 nav ul {
@@ -99,13 +86,13 @@ nav ul li {
 
 nav ul a {
   text-decoration: none;
-  color: $color-light;
+  color: #ffffff;
 }
 
 nav ul li ul {
   position: absolute;
   left: 0;
-  background: $color-light;
+  background: #ffffff;
   margin-top: 10px;
   display: none;
 }
@@ -116,19 +103,19 @@ nav ul li:hover ul {
 }
 
 nav ul li ul li {
-  background: $color-light;
+  background: #ffffff;
 }
 
 nav ul li ul li a {
-  color: $color-one;
+  color: #0097e6;
 }
 
 /* Header */
 .splash {
   display: flex;
-  background: $color-one;
+  background: #0097e6;
   min-height: 500px;
-  color: $color-light;
+  color: #ffffff;
 }
 
 .splash-inner {
@@ -155,7 +142,6 @@ nav ul li ul li a {
 }
 
 /* Our services */
-
 .box {
   flex: 0 0 33.33%;
   position: relative;
@@ -178,7 +164,7 @@ nav ul li ul li a {
   left: 0;
   top: -25px;
   opacity: 0.2;
-  color: $color-two;
+  color: #33d9b2;
 }
 
 .box p {
@@ -191,25 +177,25 @@ nav ul li ul li a {
 }
 
 .btn-two {
-  border-color: $color-one;
-  color: $color-one;
-  background-image: linear-gradient(90deg, $color-one 50%, transparent 50%);
+  border-color: #0097e6;
+  color: #0097e6;
+  background-image: linear-gradient(90deg, #0097e6 50%, transparent 50%);
 }
 
 .btn-two:hover {
-  color: $color-light;
+  color: #ffffff;
 }
 
 .btn-three {
-  border-color: $color-two;
-  color: $color-two;
-  background-image: linear-gradient(90deg, $color-two 50%, transparent 50%);
+  border-color: #33d9b2;
+  color: #33d9b2;
+  background-image: linear-gradient(90deg, #33d9b2 50%, transparent 50%);
 }
 
 .btn-four {
-  border-color: $color-three;
-  color: $color-three;
-  background-image: linear-gradient(90deg, $color-three 50%, transparent 50%);
+  border-color: #ff5252;
+  color: #ff5252;
+  background-image: linear-gradient(90deg, #ff5252 50%, transparent 50%);
 }
 
 /* our work */
@@ -229,7 +215,8 @@ nav ul li ul li a {
 .skill-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .skill-description {
@@ -237,6 +224,7 @@ nav ul li ul li a {
   text-align: left;
   font-size: 15px;
 }
+
 .skill-description p {
   margin: 0;
 }
@@ -247,9 +235,10 @@ nav ul li ul li a {
 
 /* Contact  */
 .contact {
-  background: $color-one;
-  color: $color-light;
+  background: #0097e6;
+  color: #ffffff;
 }
+
 .contact-form {
   display: block;
   padding: 10px 10px;
@@ -257,57 +246,65 @@ nav ul li ul li a {
   width: 70%;
   flex: 2 0 0;
 }
+
 .btn-contact {
   padding: 10px 10px;
 }
+
 .input-contact {
   box-sizing: border-box;
   border: none;
-  border-bottom: 3px solid $color-light;
-  background: $color-one;
+  border-bottom: 3px solid #ffffff;
+  background: #0097e6;
 }
+
+::-moz-placeholder {
+  color: #ffffff;
+}
+
 ::placeholder {
-  color: $color-light;
+  color: #ffffff;
 }
+
 .address {
   flex: 1 0 0;
 }
+
 .address-title {
   font-size: 20px;
   margin: 0;
-  color: $color-light;
+  color: #ffffff;
 }
+
 .address-description {
   font-size: 12px;
-  color: $color-light;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 /* Footer */
-.social-media {
-  ul {
-    display: flex;
-    margin: 48px 0;
-    justify-content: center;
-    li {
-      font-size: 0;
-    }
-    i {
-      font-size: 30px;
-      height: 60px;
-      width: 60px;
-      background: $color-three;
-      line-height: 60px;
-      color: $color-light;
-      border-radius: 50%;
-      text-align: center;
-      margin: 0 10px;
-    }
-    li:hover {
-      transform: scale(1.2);
-    }
-  }
-  p {
-    font-size: 35px;
-  }
+.social-media ul {
+  display: flex;
+  margin: 48px 0;
+  justify-content: center;
+}
+.social-media ul li {
+  font-size: 0;
+}
+.social-media ul i {
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #ff5252;
+  line-height: 60px;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 10px;
+}
+.social-media ul li:hover {
+  transform: scale(1.2);
+}
+.social-media p {
+  font-size: 35px;
 }
